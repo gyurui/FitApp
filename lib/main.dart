@@ -1,3 +1,4 @@
+import 'package:fitstory/colors.dart';
 import 'package:fitstory/dashboard/form_screen.dart';
 import 'package:fitstory/dashboard/invite_screen.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
       title: _title,
       home: MyStatefulWidget(),
     );
@@ -65,7 +66,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.amber[800],
+        selectedItemColor: FitColors.fitCoral,
         onTap: _onItemTapped,
       ),
     );
