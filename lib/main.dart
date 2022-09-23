@@ -1,7 +1,10 @@
 import 'package:fitstory/colors.dart';
 import 'package:fitstory/dashboard/form_screen.dart';
+import 'package:fitstory/dashboard/invite_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:fitstory/dashboard/home_screen.dart';
+
+import 'dashboard/discount_screen.dart';
 
 void main() => runApp(const MyApp());
 
@@ -28,9 +31,11 @@ class MyStatefulWidget extends StatefulWidget {
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   int _selectedIndex = 0;
-  List<Widget> _routes = <Widget>[
-    HomeScreen(),
-    FormScreen(),
+  final List<Widget> _routes = <Widget>[
+    const HomeScreen(),
+    const FormScreen(),
+    const DiscountScreen(),
+    const InviteScreen()
   ];
 
   void _onItemTapped(int index) {
@@ -54,6 +59,10 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           BottomNavigationBarItem(
             icon: Icon(Icons.fitness_center),
             label: 'Fitness',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.discount),
+            label: 'Discounts',
           ),
         ],
         currentIndex: _selectedIndex,
