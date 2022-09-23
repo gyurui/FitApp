@@ -30,6 +30,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   material_design_icons_flutter: ^5.0.6996
+  percent_indicator: ^4.2.2
   flutter:
     sdk: flutter
 

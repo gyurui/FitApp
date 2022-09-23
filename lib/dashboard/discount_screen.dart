@@ -1,3 +1,4 @@
+import 'package:fitstory/colors.dart';
 import 'package:fitstory/dashboard/discount_detail.dart';
 import 'package:flutter/material.dart';
 
@@ -23,6 +24,7 @@ class _DiscountScreenWidgetState extends State<DiscountScreenWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: FitColors.fitDirtyBlue,
         title: const Text("Discounts"),
       ),
       body: ListView(padding: const EdgeInsets.all(20), children: <Widget>[

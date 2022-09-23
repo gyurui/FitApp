@@ -1,3 +1,4 @@
+import 'package:fitstory/colors.dart';
 import 'package:flutter/material.dart';
 
 class DiscountDetailScreen extends StatelessWidget {
@@ -22,6 +23,7 @@ class _DiscountDetailScreenWidgetState extends State<DiscountDetailScreenWidget>
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: FitColors.fitDirtyBlue,
           title: const Text("Discount Detail"),
         ),
         body: Card(child: Column(
