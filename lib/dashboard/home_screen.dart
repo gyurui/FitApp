@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -6,12 +5,15 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return HomeScreenWidget();
+    return const HomeScreenWidget();
   }
 }
 
 class HomeScreenWidget extends StatefulWidget {
+  const HomeScreenWidget({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _HomeScreenWidgetState createState() => _HomeScreenWidgetState();
 }
 
