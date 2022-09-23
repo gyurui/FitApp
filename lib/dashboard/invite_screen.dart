@@ -1,3 +1,4 @@
+import 'package:fitstory/colors.dart';
 import 'package:flutter/material.dart';
 
 class InviteScreen extends StatelessWidget {
@@ -22,6 +23,8 @@ class _InviteScreenWidgetState extends State<InviteScreenWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: FitColors.fitDirtyBlue,
+
         title: const Text("Invite"),
       ),
       body: Card(child: Column(
